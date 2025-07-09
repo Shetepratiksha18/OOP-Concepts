@@ -1,7 +1,7 @@
-class Person:
-    def __init__(self, name, age):
-        self.__name = name      # private variable
-        self.__age = age
+class Student:
+    def __init__(self, name, marks):
+        self.__name = name       # private variable
+        self.__marks = marks     # private variable
 
     def get_name(self):
         return self.__name
@@ -9,5 +9,20 @@ class Person:
     def set_name(self, name):
         self.__name = name
 
-p = Person("Alice", 30)
-print(p.get_name())
+    def get_marks(self):
+        return self.__marks
+
+    def set_marks(self, marks):
+        self.__marks = marks
+
+# Usage
+s = Student("Alice", 85)
+print("Name:", s.get_name())
+print("Marks:", s.get_marks())
+
+s.set_name("Bob")
+s.set_marks(90)
+
+print("Updated Name:", s.get_name())
+print("Updated Marks:", s.get_marks())
+
