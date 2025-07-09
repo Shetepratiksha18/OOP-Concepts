@@ -1,0 +1,21 @@
+class Bird:
+    def fly(self):
+        print("Bird can fly.")
+
+class Sparrow(Bird):
+    def fly(self):
+        print("Sparrow flies at low altitude.")
+
+class Eagle(Bird):
+    def fly(self):
+        print("Eagle flies at high altitude.")
+
+# Usage
+def flying_test(bird):
+    bird.fly()
+
+s = Sparrow()
+e = Eagle()
+
+flying_test(s)
+flying_test(e)
